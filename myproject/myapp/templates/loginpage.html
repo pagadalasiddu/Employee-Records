@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+       
+      if (username === "siddu" && password === "7093211811") {
+        alert("Login successful!");
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <h2>Login Page</h2>
+  <form onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" ><br><br>
+    <label for="password">password</label>
+    <input type="password" id="password" required><br><br>
+    <input type="submit" style="background-color: blue;", style="color: white;" value="Login">
+  </form>
+</body>
+</html>
